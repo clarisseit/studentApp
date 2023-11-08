@@ -6,16 +6,15 @@ const StudentDashboard = () => {
       id: 1,
       name: "Enrolled Course 1",
       instructor: "Instructor 1",
-      thumbnail: "course-thumbnail.jpg", // You can add images as needed
+      thumbnail: "course-thumbnail.jpg", 
       dueDate: "2023-12-31",
-      progress: 50, // Progress in percentage
-      isCompleted: false, // Add a property to track completion status
-    },
-    // Add more enrolled course objects as needed
+      progress: 50,
+      isCompleted: false, 
+    }
   ]);
 
   const markCourseCompleted = (courseId) => {
-    // Find the course in the state array and update its completion status
+   
     const updatedCourses = enrolledCourses.map((course) =>
       course.id === courseId ? { ...course, isCompleted: true } : course
     );

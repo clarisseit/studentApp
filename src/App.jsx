@@ -2,9 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import CourseList from "./Pages/CourseList";
 import CourseDetails from "./Pages/CourseDetails";
-import "./App.css";
-
-
+import "/App.css"
 function App() {
   return (
     <Router>

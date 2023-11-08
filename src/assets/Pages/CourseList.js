@@ -7,8 +7,7 @@ const CourseList = () => {
 
   const handleSearch = (event) => {
     setSearchFilter(event.target.value);
-    // Update the courses state based on the search filter.
-    // You can use .filter() to filter courses based on course name or instructor.
+    
   };
 
   return (
